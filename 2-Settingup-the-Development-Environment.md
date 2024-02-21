@@ -133,11 +133,11 @@ starkli --version
 
 <img src="https://web3arabs.com/courses/starknet/argent-ex4.png"/>
 
-انتقل إلى <a href="https://faucet.goerli.starknet.io" target="_blank">https://faucet.goerli.starknet.io</a> باستخدام متصفح الويب الخاص بك. هذا موقع سوف يساعدك في الحصول على بعض عملات الإختبار في حساب Testnet الخاص بك. قم بتوصيل محفظتك واضغط على زر إرسال الطلب.
+انتقل إلى <a href="https://web3arabs.com/faucets/starknet-goerli" target="_blank">https://web3arabs.com/faucets/starknet-goerli</a> باستخدام متصفح الويب الخاص بك. سوف يساعدك هذا الصنبور بالحصول على بعض عملات الإختبار في حساب Testnet الخاص بك - قم بتوصيل محفظتك بالصنبور وإنقر على الزر **إرسال**.
 
-<img src="https://web3arabs.com/courses/starknet/starknet-faucet.png"/>
+<img src="https://web3arabs.com/courses/starknet/goerli.png"/>
 
-الآن، كل ما عليك فعله هو الانتظار حتى تكتمل المعاملة. تحقق من محفظتك بعد لحظات، سترى ما لا يقل عن 0.002 تم إضافته إلى محفظتك.
+الآن، كل ما عليك فعله هو الانتظار حتى تكتمل المعاملة. تحقق من محفظتك بعد لحظات، سترى ما لا يقل عن 0.001 تم إضافته إلى محفظتك.
 
 ## نشر الحساب كعقد على الشبكة
 

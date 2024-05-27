@@ -140,23 +140,27 @@ mod whitelist;
 
 من أجل البدء في التعامل مع حساب محفظتك ونشر عقدك الذكي فنحن بالحاجة إلى **RPC API** والذي سيعمل كعُقدة (جهاز كمبيوتر).
 
-سنقوم بإستخدام **Infura** للحصول على **API** لشبكة **Starknet** فلذلك قم بإنشاء حساب مباشرة ودعونا نكمل.
+سنقوم بإستخدام ** QuickNode** للحصول على **API** لشبكة **Starknet** فلذلك قم بإنشاء حساب مباشرة ودعونا نكمل.
 
-بعد ان تكمل من إنشاء حساب ويتم تحويلك إلى لوحة التحكم ستقوم بإنشاء مشروع وإضافة إسم له ومن ثم النقر على **CREATE**:
+<img src="https://www.web3arabs.com/courses/quicknode-home.png"/>
 
-<img src="https://web3arabs.com/courses/starknet/dapp/infura-create-project.png"/>
+سنقوم بالذهاب الى قسم Endpoints من خلال القسم الايسر ومن ثم النقر على الزر Create Endpoint من اجل إنشاء مزود عُقدة
 
-بعد إنشاء المشروع سيظهر لك انواع الشبكات التي تريد تشغيلها. ستذهب للأسفل قليلاً وستقوم باختيار شبكة **GOERLI** في **Starknet**:
+<img src="https://www.web3arabs.com/courses/starknet/dapp/quicknode-create.png"/>
 
-<img src="https://web3arabs.com/courses/starknet/dapp/infura-select-goerli.png"/>
+سنقوم بإنشاء Endpoints بهذه الطريقة:
 
-بعد تحديد الشبكة ستقوم بالنقر على حفظ التعديلات في الأعلى:
+سنقوم بإستخدام سلسلة Starknet فلذلك سنقوم بتحديدها هكذا والنقر على الزر Continue:
 
-<img src="https://web3arabs.com/courses/starknet/dapp/infura-save.png"/>
+<img src="https://www.web3arabs.com/courses/starknet/dapp/quicknode-starknet.png"/>
 
-بعد النقر على حفظ التعديلات سيقوم في إعادتك مباشرة على الصفحة التي تحتوي على الرابط الخاص في مشروعك ستقوم بحفظه في جهازك لاننا سنعود إليه قريباً:
+بما ان الغرض من الدرس هو التعلم فلذلك سنقوم بتحديد شبكة الإختبار Sepolia والنقر على الزر Continue:
 
-<img src="https://web3arabs.com/courses/starknet/dapp/infura-api.png"/>
+<img src="https://www.web3arabs.com/courses/starknet/dapp/quicknode-sepolia.png"/>
+
+أخيراً - ستقوم بنسخ HTTP Provider لأننا سنحتاجه لاحقاً من اجل نشر عقدنا الذكي على شبكة Sepolia
+<img src="https://www.web3arabs.com/courses/starknet/dapp/quicknode-url.png"/>
+
 
 ## ربط المحفظه في المشروع
 
@@ -174,8 +178,6 @@ mkdir -p ./starkli-wallets/deployer
 mkdir -p ~/.starkli-wallets/deployer
 ```
 
-<img src="https://web3arabs.com/courses/starknet/dapp/create-wallet-folder.png"/>
-
 الآن سنقوم بإنشاء ملف **keystore** عن طريق تشغيل هذا الأمر:
 
 ```bash
@@ -189,8 +191,6 @@ starkli signer keystore from-key ~/.starkli-wallets/deployer/keystore.json
 ```
 
 سيقوم بطلب منك إدخال المفتاح الخاص المتعلق بمحفظتك ستقوم بإدخال ومن ثم ستقوم بإدخال كلمة سر سيقوم بطلبها في كل مرة تريد التعامل مع المحفظة مثل نشر العقد الذكي فلذلك قم بحفظها وسيتم إنشاء ملف **keystore.json** في المجلد **deployer** مباشرة.
-
-<img src="https://web3arabs.com/courses/starknet/dapp/create-keystore.png"/>
 
 الآن سنقوم باستدعاء بيانات حساب المحفظة بكل بساطة عن طريق إدخال هذا الأمر:
 
@@ -232,7 +232,6 @@ set STARKNET_RPC=RPC_API_URL
 
 ستقوم بإدخال رابط **RPC API** في المتغير **STARKNET_RPC**.
 
-<img src="https://web3arabs.com/courses/starknet/dapp/set-env.png"/>
 
 **ملاحظة:** لا تقوم بإغلاق terminal وفي كل مرة تقوم بإغلاق terminal ستحتاج إلى إضافة هذه مرة اخرى.
 
@@ -243,8 +242,6 @@ set STARKNET_RPC=RPC_API_URL
 ```bash
 scarb build
 ```
-
-<img src="https://web3arabs.com/courses/starknet/dapp/scarb-build.png"/>
 
 ستلاحظ تم إنشاء مجلد **target** وفي داخله مجلد **dev** يحتوي على 2 ملفات.
 

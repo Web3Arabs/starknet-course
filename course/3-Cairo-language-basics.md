@@ -389,11 +389,11 @@ fn main() {
 
 ```rust
 mod config {
-    fn prints() {
+    pub fn prints() {
         println!("Hello world!");
     }
 
-    fn sum(x: u8, y: u8) -> u8 {
+    pub fn sum(x: u8, y: u8) -> u8 {
         x + y
     }
 }

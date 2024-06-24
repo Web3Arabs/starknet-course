@@ -233,9 +233,9 @@ fn main() {
     println!("The len: {}", arr.len());
 
     // إزالة اول عنصر في المصفوفة
-    arr.pop_front();
+    arr.pop_front().unwrap();
     // إزالة اول عنصر في المصفوفة
-    arr.pop_front();
+    arr.pop_front().unwrap();
 
     // طباعة القيمة الأولى التي موقعها رقم 0
     println!("Index 0: {}", *arr.at(0));
@@ -407,8 +407,8 @@ mod config {
 fn main() {
     config::prints();
 
-    let sum1 = config::sum(5, 10);
-    println!("{}", _sum);
+    let result = config::sum(5, 10);
+    println!("{}", result);
 }
 ```
 

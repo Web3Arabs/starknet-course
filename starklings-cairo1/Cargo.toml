@@ -1,0 +1,56 @@
+[package]
+name = "starklings"
+version = "0.1.0"
+authors = [
+  "Shramee <shramee.srivastav@gmail.com>",
+  "Mathieu <msaug@protonmail.com>",
+  # Authors of original rustlings
+  "Liv <mokou@fastmail.com>",
+  "Carol (Nichols || Goulding) <carol.nichols@gmail.com>",
+]
+edition = "2021"
+
+[dependencies]
+argh = "0.1"
+indicatif = "0.16"
+console = "0.15"
+notify = "4.0"
+toml = "0.5"
+regex = "1.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.81"
+home = "0.5.3"
+glob = "0.3.0"
+cairo-felt = "0.8.2"
+
+# Cairo runner dependencies
+cairo-lang-test-runner = "2.6.3"
+cairo-lang-test-plugin = "2.6.3"
+cairo-lang-runner = "2.6.3"
+cairo-lang-sierra = "2.6.3"
+scarb = { git = "https://github.com/software-mansion/scarb", tag = "v2.6.3" }
+scarb-ui = { git = "https://github.com/software-mansion/scarb", tag = "v2.6.3" }
+
+anyhow = "1.0.66"
+ark-ff = "0.4.0-alpha.7"
+ark-std = "0.3.0"
+clap = { version = "4.0", features = ["derive"] }
+itertools = "0.10.3"
+num-bigint = "0.4"
+num-traits = "0.2"
+salsa = "0.16.1"
+thiserror = "1.0.32"
+rayon = "0.9.0"
+colored = "2"
+unescaper = "0.1.1"
+camino = "1.1.6"
+
+[dev-dependencies]
+assert_cmd = "0.11.0"
+predicates = "1.0.1"
+glob = "0.3.0"
+serial_test = "2.0.0"
+
+[[bin]]
+name = "starklings"
+path = "src/main.rs"

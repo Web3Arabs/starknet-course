@@ -30,7 +30,7 @@ mod Lesson2B {
         address: ContractAddress,
         name: felt252,
         age: u128
-    }
+    }</TContractState>
 
     #[constructor]
     fn constructor(ref self: ContractState, _address: ContractAddress) {

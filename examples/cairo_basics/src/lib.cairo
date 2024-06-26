@@ -4,3 +4,6 @@ mod ifElse;
 mod functions;
 mod arrays;
 mod structs;
+mod modules;
+mod trait_impl;
+mod struct_functions

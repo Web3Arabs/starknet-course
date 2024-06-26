@@ -21,6 +21,6 @@ fn main () {
     
     println!("{}", ONE_HOUR_IN_SECONDS);
 
-    let num_1: u128 = 100;
-    let boos: bool = true;
+    let num_1 = 100;
+    let boos = true;
 }

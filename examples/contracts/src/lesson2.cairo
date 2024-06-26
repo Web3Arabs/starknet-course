@@ -4,12 +4,12 @@ use starknet::ContractAddress;
 trait ILesson2 <TContractState> {
     fn add_names(ref self: TContractState, _address: ContractAddress, _name: felt252);
     fn get_names(self: @TContractState, _address: ContractAddress) -> felt252;
-    fn get_owner(self: @TContractState) -> Lesson2B::Person;
-    fn transfer_owner(ref self: TContractState, _person: Lesson2B::Person);
+    fn get_owner(self: @TContractState) -> Lesson2::Person;
+    fn transfer_owner(ref self: TContractState, _person: Lesson2::Person);
 }
 
 #[starknet::contract]
-mod Lesson2B {
+mod Lesson2 {
     use starknet::ContractAddress;
     use starknet::get_caller_address;
 

@@ -6,4 +6,4 @@ mod arrays;
 mod structs;
 mod modules;
 mod trait_impl;
-mod struct_functions
+mod struct_functions;

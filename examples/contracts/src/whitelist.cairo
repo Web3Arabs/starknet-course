@@ -1,3 +1,5 @@
+use starknet::ContractAddress;
+
 #[starknet::interface]
 trait IWhitelist <TContractState> {
   fn add_address_to_whitelist(ref self: TContractState);

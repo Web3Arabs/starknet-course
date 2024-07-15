@@ -10,8 +10,7 @@ trait ILesson2 <TContractState> {
 
 #[starknet::contract]
 mod Lesson2 {
-    use starknet::ContractAddress;
-    use starknet::get_caller_address;
+    use starknet::{ContractAddress, get_caller_address};
 
     #[storage]
     struct Storage {

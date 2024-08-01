@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="Logo.png" width="200" height="100%"/>
+  <img src="Logo.png" width="400" height="100%"/>
 </div>
 <br/>
 
@@ -36,10 +36,10 @@
 يمكنك إستخدام الكورسات وورشات العمل الشاملة التي نقوم بنشرها، بالإضافة إلى الوثائق والكتب التي قام بإنشائها مجتمع Starknet، 
 والتي تغطي كل ما تحتاجه للبدء في تعلم إثبات ZK-Stark ولغة Cairo ومن ثم البناء على Starknet 🐺
 
-- [كورس إثبات المعرفة الصفرية ZK-STARK وشبكة Starknet]("https://web3arabs.com/courses/3d88b1a4-ad68-400b-94d3-df89a5f95cfd/lessons").
-- [قائمة تشغيل المعسكر التدريبي باللغة العربية على اليوتيوب]("https://youtube.com/playlist?list=PL7TQUwuCLstpWpNts5QYzJFyV44Qldz3J&si=inpaOue4cSD8f97c").
-- [وثائق وكتاب Starknet]("https://docs.starknet.io/").
-- [وثائق وكتاب لغة Cairo]("https://book.cairo-lang.org/").
+- <a href="https://web3arabs.com/courses/3d88b1a4-ad68-400b-94d3-df89a5f95cfd/lessons">كورس إثبات المعرفة الصفرية ZK-STARK وشبكة Starknet</a>.
+- <a href="https://youtube.com/playlist?list=PL7TQUwuCLstpWpNts5QYzJFyV44Qldz3J&si=inpaOue4cSD8f97c">قائمة تشغيل المعسكر التدريبي باللغة العربية على اليوتيوب</a>.
+- <a href="https://docs.starknet.io/">وثائق وكتاب Starknet</a>.
+- <a href="https://book.cairo-lang.org/">وثائق وكتاب لغة Cairo</a>.
 
 ## 🤝 المساهمة 
 
@@ -52,19 +52,14 @@
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/KhairallahA"><img src="https://avatars.githubusercontent.com/u/71499890?v=4?s=100" width="100px;" alt="Khairallah @ Web3Arabs"/><br /><sub><b>Khairallah @ Web3Arabs</b></sub></a><br /><a href="https://github.com/Web3Arabs/starknet-course/commits?author=KhairallahA" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/NohaPepeep"><img src="https://avatars.githubusercontent.com/u/50449410?v=4?s=100" width="100px;" alt="Nuha Al-Sameai"/><br /><sub><b>Nuha Al-Sameai</b></sub></a><br /><a href="https://github.com/Web3Arabs/starknet-course/commits?author=NohaPepeep" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ArDapps"><img src="https://avatars.githubusercontent.com/u/91119772?v=4?s=100" width="100px;" alt="Bahaa @ ArDapps"/><br /><sub><b>Bahaa @ ArDapps</b></sub></a><br /><a href="https://github.com/Web3Arabs/starknet-course/commits?author=ArDapps" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/8kma"><img src="https://avatars.githubusercontent.com/u/104277512?v=4?s=100" width="100px;" alt="Khalil"/><br /><sub><b>Khalil</b></sub></a><br /><a href="https://github.com/Web3Arabs/starknet-course/commits?author=8kma" title="Code">💻</a></td>
-    </tr>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/manx90"><img src="https://avatars.githubusercontent.com/u/170921146?v=4?s=100" width="100px;" alt="manx90"/><br /><sub><b>manx90</b></sub></a><br /><a href="https://github.com/Web3Arabs/starknet-course/commits?author=manx90" title="Code">💻</a></td>
-      <td></td>
-      <td></td>
-      <td></td>
+<table align="center">
+  <tbody align="center">
+    <tr align="center">
+      <td align="center" valign="top" width="20%"><a href="https://github.com/KhairallahA"><img src="https://avatars.githubusercontent.com/u/71499890?v=4?s=100" width="150px;" alt="Khairallah @ Web3Arabs"/><br /><sub><b>Khairallah @ Web3Arabs</b></sub></a><br /><a href="https://github.com/Web3Arabs/starknet-course/commits?author=KhairallahA" title="Code">💻</a></td>
+      <td align="center" valign="top" width="20%"><a href="https://github.com/NohaPepeep"><img src="https://avatars.githubusercontent.com/u/50449410?v=4?s=100" width="150px;" alt="Nuha Al-Sameai"/><br /><sub><b>Nuha Al-Sameai</b></sub></a><br /><a href="https://github.com/Web3Arabs/starknet-course/commits?author=NohaPepeep" title="Code">💻</a></td>
+      <td align="center" valign="top" width="20%"><a href="https://github.com/ArDapps"><img src="https://avatars.githubusercontent.com/u/91119772?v=4?s=100" width="150px;" alt="Bahaa @ ArDapps"/><br /><sub><b>Bahaa @ ArDapps</b></sub></a><br /><a href="https://github.com/Web3Arabs/starknet-course/commits?author=ArDapps" title="Code">💻</a></td>
+      <td align="center" valign="top" width="20%"><a href="https://github.com/8kma"><img src="https://avatars.githubusercontent.com/u/104277512?v=4?s=100" width="150px;" alt="Khalil"/><br /><sub><b>Khalil</b></sub></a><br /><a href="https://github.com/Web3Arabs/starknet-course/commits?author=8kma" title="Code">💻</a></td>
+      <td align="center" valign="top" width="20%"><a href="https://github.com/manx90"><img src="https://avatars.githubusercontent.com/u/170921146?v=4?s=100" width="150px;" alt="manx90"/><br /><sub><b>manx90</b></sub></a><br /><a href="https://github.com/Web3Arabs/starknet-course/commits?author=manx90" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>

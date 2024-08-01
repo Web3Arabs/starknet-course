@@ -12,11 +12,12 @@ trait ILesson<TContractState> {
 mod Lesson1 {
     use super::ILesson;
     use starknet::ContractAddress;
+    use starknet::storage::{Map, StoragePathEntry};
 
     #[storage]
     struct Storage {
         storedData: u128,
-        myMap: LegacyMap<ContractAddress, felt252>,
+        myMap: Map::<ContractAddress, felt252>,
     }
 
     #[constructor]

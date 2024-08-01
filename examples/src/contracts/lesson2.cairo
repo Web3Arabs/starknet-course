@@ -11,10 +11,11 @@ trait ILesson2 <TContractState> {
 #[starknet::contract]
 mod Lesson2 {
     use starknet::{ContractAddress, get_caller_address};
+    use starknet::storage::{Map, StoragePathEntry};
 
     #[storage]
     struct Storage {
-        names: LegacyMap<ContractAddress, felt252>,
+        names: Map::<ContractAddress, felt252>,
         owner: Person,
     }
 

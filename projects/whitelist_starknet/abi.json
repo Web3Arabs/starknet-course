@@ -1,88 +1,88 @@
 [
-    {
-      "name": "WhitelistImpl",
-      "type": "impl",
-      "interface_name": "whitelist_starknet::whitelist::IWhitelist"
-    },
-    {
-      "name": "core::bool",
-      "type": "enum",
-      "variants": [
-        {
-          "name": "False",
-          "type": "()"
-        },
-        {
-          "name": "True",
-          "type": "()"
-        }
-      ]
-    },
-    {
-      "name": "whitelist_starknet::whitelist::IWhitelist",
-      "type": "interface",
-      "items": [
-        {
-          "name": "add_address_to_whitelist",
-          "type": "function",
-          "inputs": [],
-          "outputs": [],
-          "state_mutability": "external"
-        },
-        {
-          "name": "check_address",
-          "type": "function",
-          "inputs": [
-            {
-              "name": "address",
-              "type": "core::starknet::contract_address::ContractAddress"
-            }
-          ],
-          "outputs": [
-            {
-              "type": "core::bool"
-            }
-          ],
-          "state_mutability": "view"
-        },
-        {
-          "name": "get_num_addresses",
-          "type": "function",
-          "inputs": [],
-          "outputs": [
-            {
-              "type": "core::integer::u128"
-            }
-          ],
-          "state_mutability": "view"
-        },
-        {
-          "name": "get_max_addresses",
-          "type": "function",
-          "inputs": [],
-          "outputs": [
-            {
-              "type": "core::integer::u128"
-            }
-          ],
-          "state_mutability": "view"
-        }
-      ]
-    },
-    {
-      "name": "constructor",
-      "type": "constructor",
-      "inputs": [
-        {
-          "name": "_maxWhitelistedAddresses",
-          "type": "core::integer::u128"
-        }
-      ]
-    },
-    {
-      "kind": "enum",
-      "name": "whitelist_starknet::whitelist::Whitelist::Event",
-      "type": "event",
-      "variants": []
-    }
+  {
+    "name": "WhitelistImpl",
+    "type": "impl",
+    "interface_name": "whitelist_starknet::whitelist::IWhitelist"
+  },
+  {
+    "name": "core::bool",
+    "type": "enum",
+    "variants": [
+      {
+        "name": "False",
+        "type": "()"
+      },
+      {
+        "name": "True",
+        "type": "()"
+      }
+    ]
+  },
+  {
+    "name": "whitelist_starknet::whitelist::IWhitelist",
+    "type": "interface",
+    "items": [
+      {
+        "name": "add_address_to_whitelist",
+        "type": "function",
+        "inputs": [],
+        "outputs": [],
+        "state_mutability": "external"
+      },
+      {
+        "name": "check_address",
+        "type": "function",
+        "inputs": [
+          {
+            "name": "address",
+            "type": "core::starknet::contract_address::ContractAddress"
+          }
+        ],
+        "outputs": [
+          {
+            "type": "core::bool"
+          }
+        ],
+        "state_mutability": "view"
+      },
+      {
+        "name": "get_num_addresses",
+        "type": "function",
+        "inputs": [],
+        "outputs": [
+          {
+            "type": "core::integer::u128"
+          }
+        ],
+        "state_mutability": "view"
+      },
+      {
+        "name": "get_max_addresses",
+        "type": "function",
+        "inputs": [],
+        "outputs": [
+          {
+            "type": "core::integer::u128"
+          }
+        ],
+        "state_mutability": "view"
+      }
+    ]
+  },
+  {
+    "name": "constructor",
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "_maxWhitelistedAddresses",
+        "type": "core::integer::u128"
+      }
+    ]
+  },
+  {
+    "kind": "enum",
+    "name": "whitelist_starknet::whitelist::Whitelist::Event",
+    "type": "event",
+    "variants": []
+  }
 ]

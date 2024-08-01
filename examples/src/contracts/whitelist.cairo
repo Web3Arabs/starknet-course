@@ -11,10 +11,11 @@ trait IWhitelist <TContractState> {
 #[starknet::contract]
 mod Whitelis {
   use starknet::{ContractAddress, get_caller_address};
+  use starknet::storage::{Map, StoragePathEntry};
 
   #[storage]
   struct Storage {
-    whitelistedAddresses: LegacyMap<ContractAddress, bool>,
+    whitelistedAddresses: Map::<ContractAddress, bool>,
     maxWhitelistedAddresses: u128,
     numAddressesWhitelisted: u128,
   }

@@ -1,100 +1,119 @@
-````markdown
-<div dir="rtl">
+```markdown
+# دليل المستخدم لـ **Starknet Foundry**
 
-# دليل المستخدم لـ Starknet Foundry
+**Starknet Foundry** هي مجموعة أدوات متكاملة لتطوير العقود الذكية على شبكة Starknet، تهدف إلى تسهيل عملية بناء واختبار ونشر هذه العقود.
 
-Starknet Foundry هي أداة قوية لتطوير العقود الذكية على شبكة Starknet. توفر مجموعة من الأدوات لبناء واختبار ونشر العقود الذكية بسهولة.
+## المتطلبات الأساسية
 
-## المتطلبات
+قبل البدء في استخدام **Starknet Foundry**، تأكد من توافر المتطلبات التالية:
 
-قبل البدء، تأكد من تثبيت المتطلبات التالية:
+- Scarb
+- Universal-Sierra-Compiler
+- Rust (الإصدار 1.80.1 أو أعلى)
 
-- **Scarb**
-- **Universal-Sierra-Compiler**
-- **Rust** (الإصدار 1.80.1 أو أعلى)
+يجب أن تكون جميع الأدوات مثبتة ومضافة إلى متغير البيئة `PATH`.
 
-تأكد من أن جميع الأدوات مثبتة ومضافة إلى متغير البيئة `PATH`.
+> **ملاحظة:** يتم تثبيت Universal-Sierra-Compiler تلقائيًا عند استخدام `snfoundryup` أو `asdf`. يمكنك أيضًا إنشاء متغير البيئة `UNIVERSAL_SIERRA_COMPILER` لجعلها متاحة لـ `snforge`.
 
-> **ملاحظة:** سيتم تثبيت Universal-Sierra-Compiler تلقائيًا إذا استخدمت `snfoundryup` أو `asdf`. يمكنك أيضًا إنشاء متغير البيئة `UNIVERSAL_SIERRA_COMPILER` ليكون مرئيًا لـ `snforge`.
+## التثبيت باستخدام **snfoundryup**
 
-## التثبيت باستخدام snfoundryup
+`snfoundryup` هو المثبت الرسمي لمجموعة أدوات **Starknet Foundry**.
 
-`snfoundryup` هو مثبت مجموعة أدوات Starknet Foundry.
+لتثبيته، نفذ الأمر التالي في الطرفية:
 
-لتثبيته، قم بتنفيذ الأمر التالي:
-
-```
 curl -L https://raw.githubusercontent.com/foundry-rs/starknet-foundry/master/scripts/install.sh | sh
-```
-````
 
-اتبع التعليمات، ثم نفذ:
-
+اتبع التعليمات التي تظهر، ثم قم بتشغيل:
 ```
+
 snfoundryup
-```
-
-لتحقق من أن Starknet Foundry تم تثبيتها بشكل صحيح، قم بتنفيذ الأوامر التالية:
 
 ```
+
+للتحقق من نجاح التثبيت، يمكنك تنفيذ الأوامر التالية:
+
+```
+
 snforge --version
 sncast --version
-```
-
-## التثبيت باستخدام asdf
-
-أضف الإضافة الخاصة بـ Starknet Foundry إلى asdf:
 
 ```
+
+## التثبيت باستخدام **asdf**
+
+لإضافة **Starknet Foundry** كإضافة لـ asdf، استخدم الأوامر التالية:
+
+```
+
 asdf plugin add starknet-foundry
-```
-
-لتثبيت أحدث إصدار:
 
 ```
+
+لتثبيت أحدث إصدار، نفذ:
+
+```
+
 asdf install starknet-foundry latest
+
 ```
 
-يمكنك مراجعة دليل asdf لمزيد من التفاصيل.
+للحصول على مزيد من المعلومات، يمكنك مراجعة الوثائق الخاصة بـ asdf.
 
-## التثبيت على نظام Windows
+## التثبيت على نظام **Windows**
 
-في الوقت الحالي، يتطلب تثبيت Starknet Foundry على Windows التثبيت اليدوي، ولكن الخطوات اللازمة هي الحد الأدنى:
+حتى الآن، يتطلب تثبيت **Starknet Foundry** على Windows خطوات يدوية، لكننا سنبقيها بسيطة:
 
-1. قم بتحميل الأرشيف المطلق الذي يتناسب مع معمارية وحدة المعالجة المركزية الخاصة بك.
-2. قم بفك ضغط الأرشيف إلى موقع حيث تريد تثبيت Starknet Foundry. يكفي وجود مجلد باسم `snfoundry` في دليل `%LOCALAPPDATA%\Programs`:
-   ```
-   %LOCALAPPDATA%\Programs\snfoundry
-   ```
+1. قم بتنزيل الأرشيف المناسب لمعماريات وحدة المعالجة المركزية الخاصة بك.
+2. قم بفك ضغط الأرشيف إلى موقع ترغب في تثبيت **Starknet Foundry** فيه. يمكنك استخدام مسار مثل:
+```
+
+%LOCALAPPDATA%\Programs\snfoundry
+
+```
 3. أضف مسار مجلد `snfoundry\bin` إلى متغير البيئة `PATH`.
-4. تحقق من التثبيت بتنفيذ الأوامر التالية في جلسة طرفية جديدة:
-   ```
-   snforge --version
-   sncast --version
-   ```
-
-## تحديث Universal-Sierra-Compiler
-
-إذا كنت ترغب في تحديث USC يدويًا (على سبيل المثال، عند إصدار نسخة جديدة من Sierra)، يمكنك القيام بذلك عن طريق تنفيذ الأمر التالي:
-
-```bash
-curl -L https://raw.githubusercontent.com/software-mansion/universal-sierra-compiler/master/scripts/install.sh | sh
+4. تحقق من التثبيت بتشغيل الأوامر التالية في نافذة طرفية جديدة:
 ```
 
-## كيفية بناء Starknet Foundry من الشيفرة المصدرية
+snforge --version
+sncast --version
 
-إذا كنت غير قادر على تثبيت Starknet Foundry باستخدام التعليمات أعلاه، يمكنك محاولة بناءه من الشيفرة المصدرية كالتالي:
+```
 
-1. قم بإعداد بيئة تطوير.
+## تحديث **Universal-Sierra-Compiler**
+
+إذا كنت بحاجة إلى تحديث **Universal-Sierra-Compiler** يدويًا (على سبيل المثال، عند إصدار نسخة جديدة)، يمكنك استخدام الأمر التالي:
+
+```
+
+curl -L https://raw.githubusercontent.com/software-mansion/universal-sierra-compiler/master/scripts/install.sh | sh
+
+```
+
+## بناء **Starknet Foundry** من الشيفرة المصدرية
+
+إذا واجهتك أي مشاكل في تثبيت **Starknet Foundry** عبر التعليمات المذكورة، يمكنك محاولة بناءه من الشيفرة المصدرية كما يلي:
+
+1. قم بإعداد بيئة تطوير مناسبة.
 2. نفذ الأمر التالي:
-   ```
-   cd starknet-foundry && cargo build --release
-   ```
-   سيؤدي ذلك إلى إنشاء دليل `target`.
-3. انقل دليل `target` إلى الموقع المطلوب (مثل `~/.starknet-foundry`).
-4. أضف `DESIRED_LOCATION/target/release/` إلى متغير البيئة `PATH`.
+```
+
+cd starknet-foundry && cargo build --release
+
+```
+سيؤدي ذلك إلى إنشاء دليل `target`.
+3. انقل دليل `target` إلى الموقع الذي تريده، مثل:
+```
+
+~/.starknet-foundry
+
+```
+4. تأكد من إضافة `DESIRED_LOCATION/target/release/` إلى متغير البيئة `PATH`.
+
+## المساهم
+
+**ملاك بن حملاوي**
 
 </div>
-```
 
-### ملاحظات:
+
+```

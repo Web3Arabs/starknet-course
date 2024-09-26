@@ -1,4 +1,3 @@
-````markdown
 <div dir="rtl">
 
 # دليل المستخدم لـ **Starknet Foundry**
@@ -23,23 +22,16 @@
 
 لتثبيته، نفذ الأمر التالي في الطرفية:
 
-```bash
+````bash
 curl -L https://raw.githubusercontent.com/foundry-rs/starknet-foundry/master/scripts/install.sh | sh
-```
-````
 
-اتبع التعليمات التي تظهر، ثم قم بتشغيل:
-
-```bash
-snfoundryup
-```
 
 للتحقق من نجاح التثبيت، يمكنك تنفيذ الأوامر التالية:
 
 ```bash
 snforge --version
 sncast --version
-```
+````
 
 ## التثبيت باستخدام **asdf**
 

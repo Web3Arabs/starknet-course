@@ -22,13 +22,13 @@
 
 لتثبيته، نفذ الأمر التالي في الطرفية:
 
-````bash
+````
 curl -L https://raw.githubusercontent.com/foundry-rs/starknet-foundry/master/scripts/install.sh | sh
 
 
 للتحقق من نجاح التثبيت، يمكنك تنفيذ الأوامر التالية:
 
-```bash
+```
 snforge --version
 sncast --version
 ````
@@ -37,13 +37,13 @@ sncast --version
 
 لإضافة **Starknet Foundry** كإضافة لـ asdf، استخدم الأوامر التالية:
 
-```bash
+```
 asdf plugin add starknet-foundry
 ```
 
 لتثبيت أحدث إصدار، نفذ:
 
-```bash
+```
 asdf install starknet-foundry latest
 ```
 

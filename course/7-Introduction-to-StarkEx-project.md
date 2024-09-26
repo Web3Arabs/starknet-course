@@ -1,6 +1,4 @@
 ```markdown
-<div dir="rtl">
-
 # دليل المستخدم لـ **Starknet Foundry**
 
 **Starknet Foundry** هي مجموعة أدوات متكاملة لتطوير العقود الذكية على شبكة Starknet، تهدف إلى تسهيل عملية بناء واختبار ونشر هذه العقود.
@@ -9,9 +7,9 @@
 
 قبل البدء في استخدام **Starknet Foundry**، تأكد من توافر المتطلبات التالية:
 
-- **Scarb**
-- **Universal-Sierra-Compiler**
-- **Rust** (الإصدار 1.80.1 أو أعلى)
+- Scarb
+- Universal-Sierra-Compiler
+- Rust (الإصدار 1.80.1 أو أعلى)
 
 يجب أن تكون جميع الأدوات مثبتة ومضافة إلى متغير البيئة `PATH`.
 
@@ -22,14 +20,10 @@
 `snfoundryup` هو المثبت الرسمي لمجموعة أدوات **Starknet Foundry**.
 
 لتثبيته، نفذ الأمر التالي في الطرفية:
-```
 
 curl -L https://raw.githubusercontent.com/foundry-rs/starknet-foundry/master/scripts/install.sh | sh
 
-```
-
 اتبع التعليمات التي تظهر، ثم قم بتشغيل:
-
 ```
 
 snfoundryup

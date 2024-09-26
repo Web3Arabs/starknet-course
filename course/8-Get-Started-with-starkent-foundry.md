@@ -1,4 +1,3 @@
-````markdown
 <div dir="rtl">
 
 # دليل المستخدم لـ **Starknet Foundry**
@@ -26,6 +25,7 @@
 ```bash
 curl -L https://raw.githubusercontent.com/foundry-rs/starknet-foundry/master/scripts/install.sh | sh
 ```
+
 ````
 
 اتبع التعليمات التي تظهر، ثم قم بتشغيل:
@@ -99,7 +99,8 @@ curl -L https://raw.githubusercontent.com/software-mansion/universal-sierra-comp
 
 ## المساهم
 
-**مالاك بن حلاوي**
+**ملاك بن حملاوي**
 
 </div>
-```
+
+````

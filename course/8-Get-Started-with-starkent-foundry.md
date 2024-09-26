@@ -22,16 +22,16 @@
 
 لتثبيته، نفذ الأمر التالي في الطرفية:
 
-````
+```
 curl -L https://raw.githubusercontent.com/foundry-rs/starknet-foundry/master/scripts/install.sh | sh
-
+```
 
 للتحقق من نجاح التثبيت، يمكنك تنفيذ الأوامر التالية:
 
 ```
 snforge --version
 sncast --version
-````
+```
 
 ## التثبيت باستخدام **asdf**
 
@@ -55,12 +55,12 @@ asdf install starknet-foundry latest
 
 1. قم بتنزيل الأرشيف المناسب لمعماريات وحدة المعالجة المركزية الخاصة بك.
 2. قم بفك ضغط الأرشيف إلى موقع ترغب في تثبيت **Starknet Foundry** فيه. يمكنك استخدام مسار مثل:
-   ```bash
+   ```
    %LOCALAPPDATA%\Programs\snfoundry
    ```
 3. أضف مسار مجلد `snfoundry\bin` إلى متغير البيئة `PATH`.
 4. تحقق من التثبيت بتشغيل الأوامر التالية في نافذة طرفية جديدة:
-   ```bash
+   ```
    snforge --version
    sncast --version
    ```
@@ -69,7 +69,7 @@ asdf install starknet-foundry latest
 
 إذا كنت بحاجة إلى تحديث **Universal-Sierra-Compiler** يدويًا (على سبيل المثال، عند إصدار نسخة جديدة)، يمكنك استخدام الأمر التالي:
 
-```bash
+```
 curl -L https://raw.githubusercontent.com/software-mansion/universal-sierra-compiler/master/scripts/install.sh | sh
 ```
 
@@ -79,12 +79,12 @@ curl -L https://raw.githubusercontent.com/software-mansion/universal-sierra-comp
 
 1. قم بإعداد بيئة تطوير مناسبة.
 2. نفذ الأمر التالي:
-   ```bash
+   ```
    cd starknet-foundry && cargo build --release
    ```
    سيؤدي ذلك إلى إنشاء دليل `target`.
 3. انقل دليل `target` إلى الموقع الذي تريده، مثل:
-   ```bash
+   ```
    ~/.starknet-foundry
    ```
 4. تأكد من إضافة `DESIRED_LOCATION/target/release/` إلى متغير البيئة `PATH`.

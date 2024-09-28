@@ -60,7 +60,15 @@
       <td align="center" valign="top" width="20%"><a href="https://github.com/ArDapps"><img src="https://avatars.githubusercontent.com/u/91119772?v=4?s=100" width="150px;" alt="Bahaa @ ArDapps"/><br /><sub><b>Bahaa @ ArDapps</b></sub></a><br /><a href="https://github.com/Web3Arabs/starknet-course/commits?author=ArDapps" title="Code">💻</a></td>
       <td align="center" valign="top" width="20%"><a href="https://github.com/8kma"><img src="https://avatars.githubusercontent.com/u/104277512?v=4?s=100" width="150px;" alt="Khalil"/><br /><sub><b>Khalil</b></sub></a><br /><a href="https://github.com/Web3Arabs/starknet-course/commits?author=8kma" title="Code">💻</a></td>
       <td align="center" valign="top" width="20%"><a href="https://github.com/manx90"><img src="https://avatars.githubusercontent.com/u/170921146?v=4?s=100" width="150px;" alt="manx90"/><br /><sub><b>manx90</b></sub></a><br /><a href="https://github.com/Web3Arabs/starknet-course/commits?author=manx90" title="Code">💻</a></td>
-      <td align="center" valign="top" width="20%"><a href="https://github.com/malakbenh"><img src="https://avatars.githubusercontent.com/u/94281659?s=400&u=e41ad7cc87c67321d5064582a579fe1c8fbbd78a&v=4" width="150px;" alt="manx90"/><br /><sub><b>Malak</b></sub></a><br /><a href="https://github.com/Web3Arabs/starknet-course/commits?author=malakbenh" title="Code">💻</a></td>
+      <td align="center" valign="top" width="20%">
+  <a href="https://github.com/malakbenh">
+    <img src="https://avatars.githubusercontent.com/u/94281659?s=100&u=e41ad7cc87c67321d5064582a579fe1c8fbbd78a&v=4" width="150px;" alt="Malak"/>
+    <br /><sub><b>Malak</b></sub>
+  </a>
+  <br />
+  <a href="https://github.com/Web3Arabs/starknet-course/commits?author=malakbenh" title="Code">💻</a>
+</td>
+
 
     </tr>
   </tbody>

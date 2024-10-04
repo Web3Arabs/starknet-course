@@ -89,8 +89,6 @@ curl -L https://raw.githubusercontent.com/software-mansion/universal-sierra-comp
    ```
 4. تأكد من إضافة `DESIRED_LOCATION/target/release/` إلى متغير البيئة `PATH`.
 
-## المساهم
 
-**ملاك بن حملاوي**
 
 </div>

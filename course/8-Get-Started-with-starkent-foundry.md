@@ -1,5 +1,3 @@
-<div dir="rtl">
-
 # دليل المستخدم لـ **Starknet Foundry**
 
 **Starknet Foundry** هي مجموعة أدوات متكاملة لتطوير العقود الذكية على شبكة Starknet، تهدف إلى تسهيل عملية بناء واختبار ونشر هذه العقود.
@@ -88,7 +86,3 @@ curl -L https://raw.githubusercontent.com/software-mansion/universal-sierra-comp
    ~/.starknet-foundry
    ```
 4. تأكد من إضافة `DESIRED_LOCATION/target/release/` إلى متغير البيئة `PATH`.
-
-
-
-</div>
